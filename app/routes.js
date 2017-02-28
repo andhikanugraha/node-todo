@@ -32,6 +32,8 @@ module.exports = function (app) {
             if (err)
                 res.send(err);
 
+            console.log('Added todo: ' + req.body.text);
+
             // get and return all the todos after you create another
             getTodos(res);
         });
