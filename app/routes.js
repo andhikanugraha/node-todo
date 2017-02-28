@@ -29,6 +29,7 @@ module.exports = function (app) {
             text: req.body.text,
             done: false
         }, function (err, todo) {
+            console.log('Added todo: ' + req.body.text);
             if (err)
                 res.send(err);
 
